@@ -52,7 +52,7 @@
 \hypersetup{colorlinks=true,urlcolor=black}
 \usepackage[11pt]{moresize}
 \usepackage{setspace}
-% \usepackage{fontspec}
+\usepackage{graphicx} % For including images
 \usepackage[inline]{enumitem}
 \usepackage{array}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
@@ -143,19 +143,34 @@
 	%%%%%%%  HEADER
 	%%%%%%% --------------------------------------------------------------------------------------
 	%\begin{center}
-		\begin{minipage}[c]{0.7\textwidth}
+		\begin{minipage}[c]{0.6\textwidth}
 %			\centering
 			% \hspace{-2.7 cm}
-			\raggedright {\fontsize{45}{60}\selectfont \textbf{Fahd Siddiqui}} \hfill \\ %
+			\raggedright {\fontsize{40}{50}\selectfont \textbf{Fahd Siddiqui}} \hfill \\ %
 %			\vspace{0.1cm}
 			%{\color{UI_black}} \\
 		\end{minipage}% 
-		\begin{minipage}[c]{0.3\textwidth}
+		%\begin{minipage}[c]{0.15\textwidth}
+		%	\centering
+		%	 \begin{tabular}{p{1.7cm} p{1em}}
+		%		\qrcode[height=1.5cm]{https://www.linkedin.com/in/SiddiquiFahd} & \qrcode[height=1.5cm]{https://github.com/Fahd-Siddiqui} \\
+		%		\normalsize LinkedIn & \normalsize GitHub \\
+		%	\end{tabular}
+		%\end{minipage}% 
+		\begin{minipage}[c]{0.09\textwidth}
+			% \centering
+			\href{https://www.github.com/fahd-siddiqui}{\includegraphics[width=1.5cm]{gh-qr-code.png}}
+		\end{minipage}%
+		\begin{minipage}[c]{0.09\textwidth}
+			% \centering
+			\href{https://www.linkedin.com/in/SiddiquiFahd}{\includegraphics[width=1.5cm]{li-qr-code.png}}
+		\end{minipage}%
+		\begin{minipage}[c]{0.22\textwidth}
 			\hfill \raggedleft \normalsize Houston, TX \\
-			\raggedleft \normalsize (806)-281-2458 \\
+			\raggedleft \normalsize (731)-400-0392 \\
 			\raggedleft \normalsize \href{mailto:FahdSiddiqui@gmail.com}{FahdSiddiqui@gmail.com} \\
 			\raggedleft \normalsize \href{FahdSiddiqui.com}{FahdSiddiqui.com} 
-		\end{minipage}   
+		\end{minipage}%
 		
 		\vspace{0.25cm} 
 		{\color{UI_black} \hrulefill}
@@ -199,9 +214,9 @@
 		\item Optimized core algorithms for efficient genomic data storage, searching, and retrieval from custom data blobs.
 		\item Integrated external sources: gnomAD, ClinVar, ClinGen, and COSMIC for germline and somatic variants.
 		\item Owned end-to-end and ensured high availability for: AWS Lambda service, command-line, and  docker including testing and entire deployment pipeline.
-		\item Integrated annotation library and licensing into internal tools and external customers' products.
-		\item Contributed to the rigorous SDLC and testing, to satisfy regulatory compliance.
-		\item Tools: AWS Lambda, S3, CloudFront, dotnet 6, Bash, Docker, CI/CD, Jira.
+		\item Created Cloudformation+Lambda+RestAPI based licensing API for internal tools and external customers' products.
+		\item Created CI/CD pipelines for automated testing and deployment resulting in error free deployments.
+		\item Tools: AWS Lambda, S3, CloudFront, CloudFormation, RestAPI, dotnet 8, Bash, Docker, CI/CD, Jira.
 	\end{zitemize}
 	
 	\vspace{0.3 cm}
@@ -213,7 +228,7 @@
 		\item Created automated ML model pipeline for training and evaluating new models from unstructured data.
 		\item Designed algorithms for detecting events, anomalies, and engineering calculations in real-time data.
 		\item Created 25+ distributed, scalable, and fault tolerant data processing streamed, on-demand, and scheduled cloud apps.
-		\item Tools: AWS Lambda, Python, Java, Bash, Jupyter, Sk-learn, Docker, CI/CD, Jira, Notion, Rollbar.
+		\item Tools: Startup experience, AWS Lambda, Python, Java, Bash, Jupyter, Sk-learn, Docker, CI/CD, Jira, Notion, Rollbar, DataDog.
 	\end{zitemize}
 	
 	\vspace{0.3 cm}
